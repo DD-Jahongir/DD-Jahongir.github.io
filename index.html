@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 1</title>
+</head>
+<body>
+
+    <ul>
+        <li><a href="http://kubsu.ru">Абсолютная ссылка на главную страницу сайта kubsu.ru (HTTP)</a></li>
+        <li><a href="https://kubsu.ru">Абсолютная ссылка на главную страницу сайта kubsu.ru (HTTPS)</a></li>
+        <li><a href="https://example.com"><img src="image.jpg" width="400"></a></li>
+        <li><a href="index.html">Сокращенная ссылка на внутреннюю страницу</a></li>
+        <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
+        <li><a href="#fragment">Ссылка на фрагмент текущей страницы</a></li>
+        <li><a href="page.html? param1=value1 & param2=value2 & param3=value3">Ссылка с тремя параметрами в URL</a></li>
+        <li><a href="page.html?id=123">Ссылка с параметром id в URL</a></li>
+        <li><a href="relative.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+        <li><a href="about/relative.html">Относительная ссылка на страницу в каталоге about</a></li>
+        <li><a href="../up.html">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+        <li><a href="../../upup.html">Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
+        <li>Пример <a href="context.html">контекстной</a> ссылки в тексте абзаца.</li>
+        <li><a href="https://example.com#fragment">Ссылка на фрагмент страницы стороннего сайта</a></li>
+        <li>
+            <img src="imagemap.png" usemap="#imagemap" width="400">
+            <map name="imagemap">
+                <area shape="rect" coords="0,0,100,100" href="rect.html">
+                <area shape="circle" coords="150,150,50" href="circle.html">
+            </map>
+        </li>
+        <li><a href="">Ссылка с пустым href</a></li>
+        <li><a>Ссылка без href</a></li>
+        <li><a href="nofollow.html" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+        <li><a href="noindex.html" rel="noindex">Запрещенная для индексации поисковиками</a></li>
+    </ul>
+
+    <ol>
+        <li><a href="link1.html">Ссылка 1</a></li>
+        <li><a href="link2.html">Ссылка 2</a></li>
+        <li><a href="link3.html">Ссылка 3</a></li>
+    </ol>
+
+    <a href="ftp://username:password@ftp.example.com/file.txt">Ссылка на файл на сервере FTP с авторизацией</a>
+
+    <form action="/" method="POST">
+        <label>
+          ФИО:<br />
+          <input 
+            name="fio" 
+            type="text" 
+            placeholder="Введите ваше ФИО"
+          />
+        </label>
+        <br />
+  
+        <label>
+          Телефон:<br />
+          <input
+            name="phone"
+            type="tel"
+            placeholder="Введите ваш телефон"
+          />
+        </label>
+        <br />
+  
+        <label>
+          E-mail:<br />
+          <input 
+            name="email" 
+            type="email" 
+            placeholder="Введите вашу почту"
+          />
+        </label>
+        <br />
+  
+        <label>
+          Дата рождения:<br />
+          <input 
+            name="birthdate" 
+            type="date"
+          />
+        </label>
+        <br />
+  
+        Пол:<br />
+        <label>
+          <input 
+            type="radio" 
+            name="gender" 
+            value="male"
+          />
+          Мужской
+        </label>
+        <label>
+          <input 
+            type="radio" 
+            name="gender" 
+            value="female"
+          /> 
+          Женский
+        </label>
+        <br />
+  
+        <label>
+          Любимый язык программирования:<br />
+          <select name="languages[]" multiple="multiple">
+            <option value="pascal" selected="selected">Pascal</option>
+            <option value="c" selected="selected">C</option>
+            <option value="cpp" selected="selected">C++</option>
+            <option value="javascript" selected="selected">JavaScript</option>
+            <option value="php" selected="selected">PHP</option>
+            <option value="python" selected="selected">Python</option>
+            <option value="java" selected="selected">Java</option>
+            <option value="haskell" selected="selected">Haskell</option>
+            <option value="clojure" selected="selected">Clojure</option>
+            <option value="prolog" selected="selected">Prolog</option>
+            <option value="scala" selected="selected">Scala</option>
+          </select>
+        </label>
+        <br />
+  
+        <label>
+          Биография:<br />
+          <textarea 
+            name="bio"  
+            placeholder="Напишите о себе"
+          ></textarea>
+        </label>
+        <br />
+  
+        <label>
+          <input 
+            type="checkbox" 
+            name="contract" 
+            value="agreed"
+          />
+          С контрактом ознакомлен (а)
+        </label>
+        <br />
+  
+        <input 
+            type="submit" 
+            value="Сохранить"
+          />
+      </form>
+
+    <div id="fragment"></div>
+
+</body>
+</html>
