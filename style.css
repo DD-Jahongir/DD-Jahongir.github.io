@@ -1,0 +1,101 @@
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    width: 100%;
+    background-color: #ccc;
+    padding: 10px;
+    height: 120px;
+}
+
+header img {
+    float: left;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+header div {
+    background-color: #ddd;
+    padding: 10px;
+    padding-right: 20px;
+}
+
+header nav a {
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #333;
+    text-decoration: none;
+}
+
+main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+main div {
+    background-color: #ddd;
+    padding: 15px;
+}
+
+main ul {
+    list-style: none;
+    padding: 0;
+}
+
+main ul li {
+    margin-bottom: 10px;
+}
+
+main table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+main th, main td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+main thead tr {
+    background-color: #f1f1f1;
+}
+
+main tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+footer {
+    text-align: center;
+    background-color: #ccc;
+}
+
+footer p {
+    padding: 30px 10px 10px 10px;
+    text-align: right;
+}
+
+form {
+    background-color: #ddd;
+    padding: 15px;
+}
+
+form input[type="text"], 
+form input[type="tel"], 
+form input[type="email"], 
+form textarea, 
+form select {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+    padding: 10px;
+}
