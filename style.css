@@ -20,9 +20,12 @@ header img {
 header div {
     background-color: #ddd;
     padding: 10px;
-    padding-right: 20px;
+    padding-right: 30px;
 }
 
+header h1{
+    margin-left: 20%;
+}
 header nav{
     height: 20px;
 }
@@ -35,7 +38,6 @@ header nav a {
 }
 
 main {
-    max-width: 960px;
     max-width: 960px;
     margin: 20px auto;
     padding: 20px;
@@ -59,6 +61,7 @@ main table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
+    color: #ccc;
 }
 
 main th, main td {
@@ -66,8 +69,12 @@ main th, main td {
     padding: 8px;
 }
 
-main thead tr {
-    background-color: #f1f1f1;
+.chet{
+    background-color: #c21616;
+}
+
+.nechet{
+    background-color: #333;
 }
 
 main tbody tr:nth-child(odd) {
