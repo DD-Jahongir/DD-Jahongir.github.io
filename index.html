@@ -6,21 +6,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div id="header">
     <header>
-        <img src="logo.png" alt="Описание картинки для скрин-ридеров и поисковиков" />
-        <div>
-            <nav >
-                <a href="#">Ссылка меню 1</a>
-                <a href="#">Ссылка 2</a>
-                <a href="#">Ссылка 3</a>
-            </nav>
-        </div>
-        <h1>Название сайта</h1>
-    </header>
-
+      <img src="logo.png" alt="Описание картинки для скрин-ридеров и поисковиков" />
+      <nav >
+        <a href="#">Ссылка меню 1</a>
+        <a href="#">Ссылка 2</a>
+        <a href="#">Ссылка 3</a>
+      </nav>
+      <h1>Название сайта</h1>
+  </header>
+  </div>
+    
     <main>
-        <h2>Список гиперссылок</h2>
-        <div>
+        <div class="links">
+          <br/>
+          <h2>Список гиперссылок</h2>
           <ul>
             <li><a href="http://kubsu.ru">Абсолютная ссылка на главную страницу сайта kubsu.ru (HTTP)</a></li><br />
             <li><a href="https://kubsu.ru">Абсолютная ссылка на главную страницу сайта kubsu.ru (HTTPS)</a></li><br />
@@ -51,68 +52,69 @@
         <br />
         <h3>Нумерованный список ссылок</h3>
         <ol>
-            <li><a href="link1.html" title="Ccылка 1">Ссылка 1</a></li>
-            <li><a href="link2.html" title="Ccылка 2">Ссылка 2</a></li>
-            <li><a href="link3.html" title="Ccылка 3">Ссылка 3</a></li>
+            <li><a href="link1.html">Ссылка 1</a></li>
+            <li><a href="link2.html">Ссылка 2</a></li>
+            <li><a href="link3.html">Ссылка 3</a></li>
         </ol><br />
         <a href="ftp://username:password@ftp.example.com/file.txt">Ссылка на файл на сервере FTP с авторизацией</a><br /><br />
         </div>
 
-        <h2>Таблица</h2>
-        <table>
-          <thead>
-            <tr class="nechet">
-                <th>#</th>
-                <th>Заголовок 1</th>
-                <th>Заголовок 2</th>
-                <th>Заголовок 3</th>
-                <th>Заголовок 4</th>
-            </tr>
-            <tr class="nechet">
-                <td>1</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr class="chet">
-                <td>2</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr class="nechet">
-                <td>3</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr class="chet">
-                <td>4</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr class="nechet">
-                <td>5</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr class="chet">
-                <td>6</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </tbody>
-        </table>
-        <br />
+        <div class="table">
+          <br /> 
+          <table>
+            <h2>Таблица</h2>
+            <thead>
+              <tr class="nechet">
+                  <th>#</th>
+                  <th>Заголовок 1</th>
+                  <th>Заголовок 2</th>
+                  <th colspan="2">Заголовок 3 и Заголовок 4</th>
+              </tr>
+              <tr class="nechet">
+                  <td>1</td>
+                  <td rowspan="2"></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+              <tr class="chet">
+                  <td>2</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+              <tr class="nechet">
+                  <td>3</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+              <tr class="chet">
+                  <td>4</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+              <tr class="nechet">
+                  <td>5</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+              <tr class="chet">
+                  <td>6</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+          </tbody>
+          </table>
+          <br /> 
+        </div>
         
         <h2>Форма</h2>
         <form action="/" method="POST">
