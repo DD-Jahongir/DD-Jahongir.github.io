@@ -6,14 +6,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="header">
+  <div class="container">
     <header>
-      <img src="logo.png" alt="Описание картинки для скрин-ридеров и поисковиков" />
       <nav >
         <a href="#">Ссылка меню 1</a>
         <a href="#">Ссылка 2</a>
         <a href="#">Ссылка 3</a>
-      </nav>
+    </nav>
+      <img src="logo.png" alt="Описание картинки для скрин-ридеров и поисковиков" />
       <h1>Название сайта</h1>
   </header>
   </div>
@@ -25,7 +25,7 @@
           <ul>
             <li><a href="http://kubsu.ru">Абсолютная ссылка на главную страницу сайта kubsu.ru (HTTP)</a></li><br />
             <li><a href="https://kubsu.ru">Абсолютная ссылка на главную страницу сайта kubsu.ru (HTTPS)</a></li><br />
-            <li><a href="https://example.com"><img src="image.jpg" width="400"></a></li><br />
+            <li><a href="https://example.com"><img src="image.jpg" width="300"></a></li><br />
             <li><a href="index.html">Сокращенная ссылка на внутреннюю страницу</a></li><br />
             <li><a href="/">Сокращенная ссылка на главную страницу</a></li><br />
             <li><a href="#fragment">Ссылка на фрагмент текущей страницы</a></li><br />
@@ -38,7 +38,7 @@
             <li>Пример <a href="context.html">контекстной</a> ссылки в тексте абзаца.</li><br />
             <li><a href="https://example.com#fragment">Ссылка на фрагмент страницы стороннего сайта</a></li><br />
             <li>
-                <img src="imagemap.png" usemap="#imagemap" width="400">
+                <img src="imagemap.png" usemap="#imagemap" width="300">
                 <map name="imagemap">
                     <area shape="rect" coords="0,0,100,100" href="rect.html">
                     <area shape="circle" coords="150,150,50" href="circle.html">
@@ -52,9 +52,9 @@
         <br />
         <h3>Нумерованный список ссылок </h3>
         <ol>
-            <li><a href="link1.html">Ссылка 1</a></li>
-            <li><a href="link2.html">Ссылка 2</a></li>
-            <li><a href="link3.html">Ссылка 3</a></li>
+            <li><a href="link1.html" title="Ссылка 1">Ссылка 1</a></li>
+            <li><a href="link2.html" title="Ссылка 2">Ссылка 2</a></li>
+            <li><a href="link3.html" title="Ссылка 3">Ссылка 3</a></li>
         </ol><br />
         <a href="ftp://username:password@ftp.example.com/file.txt">Ссылка на файл на сервере FTP с авторизацией</a><br /><br />
         </div>
@@ -64,7 +64,7 @@
           <table>
             <h2>Таблица</h2>
             <thead>
-              <tr class="nechet">
+              <tr class="chet">
                   <th>#</th>
                   <th>Заголовок 1</th>
                   <th>Заголовок 2</th>
