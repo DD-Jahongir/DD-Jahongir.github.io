@@ -2,30 +2,88 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Задание 2</title>
+    <title>Задание 3</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
+  <div class="header">
     <header>
-        <img src="logo.png" alt="Описание картинки для скрин-ридеров и поисковиков" />
-      <nav >
-        <a href="#">Ссылка меню 1</a>
-        <a href="#">Ссылка 2</a>
-        <a href="#">Ссылка 3</a>
-    </nav>
-      <h1>Название сайта</h1>
+      <img src="logo.png" alt="Описание картинки для скрин-ридеров и поисковиков" />
+      <h1>Название сайта</h1>      
   </header>
+    <nav>
+      <ul>
+        <li><a href="#">Ссылка меню 1</a></li>
+        <li><a href="#">Ссылка 2</a></li>
+        <li><a href="#">Ссылка 3</a></li>
+      </ul>
+   </nav>
   </div>
     
     <main>
+      <div class="table">
+        <table>
+          <h2>Таблица</h2>
+          <thead>
+            <tr class="nechet">
+                <th>#</th>
+                <th>Заголовок 1</th>
+                <th>Заголовок 2</th>
+                <th colspan="2">Заголовок 3 и Заголовок 4</th>
+            </tr>
+            <tr class="nechet">
+                <td>1</td>
+                <td rowspan="2"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="chet">
+                <td>2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="nechet">
+                <td>3</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="chet">
+                <td>4</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="nechet">
+                <td>5</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="chet">
+                <td>6</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+        </table>
+        <br /> 
+      </div>
+
+      <h2>Список гиперссылок</h2>
         <div class="links">
           <br/>
-          <h2>Список гиперссылок</h2>
           <ul>
             <li><a href="http://kubsu.ru">Абсолютная ссылка на главную страницу сайта kubsu.ru (HTTP)</a></li><br />
             <li><a href="https://kubsu.ru">Абсолютная ссылка на главную страницу сайта kubsu.ru (HTTPS)</a></li><br />
-            <li><a href="https://example.com"><img src="image.jpg" width="300"></a></li><br />
+            <li><a href="https://example.com"><img src="image.jpg" width="400"></a></li><br />
             <li><a href="index.html">Сокращенная ссылка на внутреннюю страницу</a></li><br />
             <li><a href="/">Сокращенная ссылка на главную страницу</a></li><br />
             <li><a href="#fragment">Ссылка на фрагмент текущей страницы</a></li><br />
@@ -38,7 +96,7 @@
             <li>Пример <a href="context.html">контекстной</a> ссылки в тексте абзаца.</li><br />
             <li><a href="https://example.com#fragment">Ссылка на фрагмент страницы стороннего сайта</a></li><br />
             <li>
-                <img src="imagemap.png" usemap="#imagemap" width="300">
+                <img src="imagemap.png" usemap="#imagemap" width="400">
                 <map name="imagemap">
                     <area shape="rect" coords="0,0,100,100" href="rect.html">
                     <area shape="circle" coords="150,150,50" href="circle.html">
@@ -50,70 +108,13 @@
             <li><a href="noindex.html" rel="noindex">Запрещенная для индексации поисковиками</a></li><br />
         </ul>
         <br />
-        <h3>Нумерованный список ссылок </h3>
+        <h3>Нумерованный список ссылок</h3>
         <ol>
-            <li><a href="link1.html" title="Ссылка 1">Ссылка 1</a></li>
-            <li><a href="link2.html" title="Ссылка 2">Ссылка 2</a></li>
-            <li><a href="link3.html" title="Ссылка 3">Ссылка 3</a></li>
+            <li><a href="link1.html">Ссылка 1</a></li>
+            <li><a href="link2.html">Ссылка 2</a></li>
+            <li><a href="link3.html">Ссылка 3</a></li>
         </ol><br />
         <a href="ftp://username:password@ftp.example.com/file.txt">Ссылка на файл на сервере FTP с авторизацией</a><br /><br />
-        </div>
-
-        <div class="table">
-          <br /> 
-          <table>
-            <h2>Таблица</h2>
-            <thead>
-              <tr class="chet">
-                  <th>#</th>
-                  <th>Заголовок 1</th>
-                  <th>Заголовок 2</th>
-                  <th colspan="2">Заголовок 3 и Заголовок 4</th>
-              </tr>
-              <tr class="nechet">
-                  <td>1</td>
-                  <td rowspan="2"></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-              </tr>
-              <tr class="chet">
-                  <td>2</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-              </tr>
-              <tr class="nechet">
-                  <td>3</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-              </tr>
-              <tr class="chet">
-                  <td>4</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-              </tr>
-              <tr class="nechet">
-                  <td>5</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-              </tr>
-              <tr class="chet">
-                  <td>6</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-              </tr>
-          </tbody>
-          </table>
-          <br /> 
         </div>
         
         <h2>Форма</h2>
